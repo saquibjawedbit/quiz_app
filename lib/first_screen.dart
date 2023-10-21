@@ -8,34 +8,32 @@ class FirstScreen extends StatelessWidget {
 
   @override
   Widget build(context) {
-    return Container(
-      decoration: const BoxDecoration(
-          gradient: LinearGradient(
-              colors: [Colors.blue, Color.fromARGB(255, 3, 62, 164)])),
-      child: Center(
-          child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Image.asset(
-            "assets/images/quiz-logo.png",
-            height: 300,
-          ),
-          const SizedBox(
-            height: 40,
-          ),
-          Text(
-            welcomeText,
-            style: const TextStyle(fontSize: 26, color: Colors.white),
-          ),
-          const SizedBox(
-            height: 25,
-          ),
-          OutlinedButton(
-              onPressed: () {},
-              style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
-              child: Text(buttonText))
-        ],
-      )),
-    );
+    return Center(
+        child: Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Image.asset(
+          "assets/images/quiz-logo.png",
+          width: 300,
+          color: const Color.fromARGB(150, 255, 255, 255),
+        ),
+        const SizedBox(
+          height: 80,
+        ),
+        Text(
+          welcomeText,
+          style: const TextStyle(fontSize: 26, color: Colors.white),
+        ),
+        const SizedBox(
+          height: 25,
+        ),
+        OutlinedButton.icon(
+          onPressed: () {},
+          style: OutlinedButton.styleFrom(foregroundColor: Colors.white),
+          label: Text(buttonText),
+          icon: const Icon(Icons.arrow_right_alt),
+        )
+      ],
+    ));
   }
 }
