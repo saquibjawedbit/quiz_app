@@ -1,3 +1,4 @@
 {
-    "cmake.configureOnOpen": true
+    "cmake.configureOnOpen": true,
+    "cmake.sourceDirectory": "C:/Users/BIT/Documents/flutter_projects/quiz_app/windows/flutter"
 }
